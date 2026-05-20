@@ -26,6 +26,10 @@ apis:
     description: >-
       The Syneos Health API provides access to platform services and data for enterprise integration and automation.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/syneoshealth
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/syneos-health
   - type: Website
     url: https://www.syneoshealth.com
 maintainers:
