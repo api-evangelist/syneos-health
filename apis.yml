@@ -49,6 +49,12 @@ apis:
     description: >-
       The Syneos Health API provides access to platform services and data for enterprise integration and automation.
 common:
+  - type: Plans
+    url: plans/syneos-health-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/syneos-health-rate-limits.yml
+  - type: FinOps
+    url: finops/syneos-health-finops.yml
   - type: DomainSecurity
     url: security/syneos-health-domain-security.yml
   - type: GitHubOrganization
