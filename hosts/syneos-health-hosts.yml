@@ -1,0 +1,120 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 9
+  own: 7
+  other_domain: 0
+  platform: 2
+  roles:
+  - api
+  - other
+  - portal
+  - source
+  - website
+hosts:
+- host: api.syneoshealth.com
+  found_by:
+  - apis[]
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - api
+  registrable_domain: syneoshealth.com
+  role: api
+  relation: own
+- host: ca.syneoshealth.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: syneoshealth.com
+  role: other
+  relation: own
+- host: developer.syneoshealth.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: syneoshealth.com
+  role: portal
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: go.syneoshealth.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: syneoshealth.com
+  role: other
+  relation: own
+- host: jp.syneoshealth.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: syneoshealth.com
+  role: other
+  relation: own
+- host: syneoshealth.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: syneoshealth.com
+  role: other
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.syneoshealth.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Newsroom
+  - Website
+  - TermsOfService
+  - Support
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: syneoshealth.com
+  role: website
+  relation: own

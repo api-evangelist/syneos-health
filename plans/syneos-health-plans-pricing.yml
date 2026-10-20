@@ -1,58 +1,10 @@
-# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-04-19 by the file itself), not
-# harvested from the provider. `method: generated` so the economics campaign may replace it with a
-# dated, verbatim transcription; every figure below is unverified until it does.
-method: generated
-generated: '2026-04-19'
-specification: API Commons Plans
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
-provider: Syneos Health
-providerId: syneos-health
-created: '2026-04-19'
-modified: '2026-05-05'
-reconciled: false
-tags:
-  - Clinical Research
-  - Biopharmaceutical
-description: Syneos Health is a biopharmaceutical clinical-research and commercial-services CRO. There is no public API portal, pricing page, or developer portal at developer.syneoshealth.com that exposes a self-serve API. Any technical integration is part of a customer-engagement contract (clinical, commercial, or technology services).
-sources:
-  - https://www.syneoshealth.com
-notes: No public API or pricing surface. Integrations are scoped inside negotiated CRO/commercialization engagements; the developer.syneoshealth.com domain is not an active public developer portal.
-plans:
-  - id: syneos-health-contact-sales
-    name: Contact Sales
-    type: enterprise
-    description: Custom-priced engagement covering clinical research, commercialization, and technology integration. APIs and data exchange are scoped to the contract.
-    entries:
-      - label: Custom Engagement
-        name: custom_engagement
-        type: flat
-        metric: varies
-        limit: -1
-        timeFrame: usage
-        geo: global
-        unit: 1
-        price: contact sales
-        userMultiplied: false
-    elements:
-      - name: Syneos Health API
-      - name: Custom Clinical / Commercial Engagement
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
-x-canonical:
-  generated: '2026-10-08'
-  vocabulary: all/0-working/economics/plans-canonical.yml
-  models:
-  - subscription
-  units:
-  - negotiated
-  plans:
-  - name: Contact Sales
-    access: enterprise
-    model: subscription
-    model_how: derived
-    units:
-    - negotiated
-    periods:
-    - per-use
+name: Syneos Health pricing
+generated: '2026-10-20'
+method: none
+source: https://www.syneoshealth.com
+audience: unclear
+pricing_basis: none
+published: false
+plan_count: 0
+plans: []
+note: No pricing or plans page for an API is published on www.syneoshealth.com; services are sold under negotiated CRO/commercialization engagements.

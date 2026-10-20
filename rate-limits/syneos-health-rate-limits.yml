@@ -1,34 +1,7 @@
-# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-04-19 by the file itself), not
-# harvested from the provider. `method: generated` so the economics campaign may replace it with a
-# dated, verbatim transcription; every figure below is unverified until it does.
-method: generated
-generated: '2026-04-19'
-specification: API Commons Rate Limits
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
-provider: Syneos Health
-providerId: syneos-health
-created: '2026-04-19'
-modified: '2026-05-05'
-reconciled: false
-tags:
-  - Clinical Research
-  - Biopharmaceutical
-  - Rate Limiting
-description: Syneos Health does not publish a public API or rate-limit documentation. Integration limits are defined inside the customer's CRO/commercialization contract.
-sources:
-  - https://www.syneoshealth.com
-notes: No public rate-limit documentation. Limits and SLAs are scoped per engagement.
-responseCodes:
-  throttled: 429
-limits:
-  - name: Contract-Defined Limits
-    scope: contract
-    metric: varies
-    limit: 'see custom contract; not publicly documented'
-policies:
-  - name: Contract-Governed
-    description: Rate limits, retry expectations, and SLAs are defined in the customer's signed services agreement.
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+name: Syneos Health rate limits
+generated: '2026-10-20'
+method: none
+source: https://www.syneoshealth.com
+limit_count: 0
+limits: []
+note: No public rate-limit documentation. api.syneoshealth.com is a WSO2 API Manager gateway ("Welcome to APIM") with no public docs; developer.syneoshealth.com does not resolve in DNS.
